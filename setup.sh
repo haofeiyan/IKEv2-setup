@@ -78,7 +78,7 @@ apt-get -o Acquire::ForceIPv4=true update && apt-get upgrade -y
 debconf-set-selections <<< "postfix postfix/mailname string ${VPNHOST}"
 debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
 
-apt-get install -y language-pack-en strongswan strongswan-ikev2 libstrongswan-standard-plugins strongswan-libcharon libcharon-standard-plugins libcharon-extra-plugins moreutils iptables-persistent postfix mailutils unattended-upgrades certbot
+apt-get install -y strongswan strongswan-ikev2 libstrongswan-standard-plugins strongswan-libcharon libstrongswan-standard-plugins libcharon-extra-plugins moreutils iptables-persistent postfix mailutils unattended-upgrades certbot
 
 
 ETH0ORSIMILAR=$(ip route get 8.8.8.8 | awk -- '{printf $5}')
