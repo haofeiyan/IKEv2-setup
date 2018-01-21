@@ -6,7 +6,7 @@
 # do-release-upgrade
 
 # == Then run this script
-# wget https://github.com/haofeiyan/IKEv2-setup/blob/master/setup.sh
+# wget https://raw.githubusercontent.com/haofeiyan/IKEv2-setup/master/setup.sh
 # chmod u+x setup.sh
 # ./setup.sh
 
